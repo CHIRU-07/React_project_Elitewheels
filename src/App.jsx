@@ -31,6 +31,7 @@ import Mumbai from "./Components/Locations/Mumbai/Mumbai";
 import Kolkata from "./Components/Locations/Kolkata/Kolkata";
 
 
+
 const App = () => {
   const [user, setUser] = useState(null);
   const [userRole, setUserRole] = useState("");
@@ -38,10 +39,7 @@ const App = () => {
 
 
   useEffect(() => {
-
-
-
-    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
       console.log("Auth state changed. Current user:", currentUser);
 
       if (!currentUser) {
@@ -113,6 +111,7 @@ const App = () => {
           <Route path="/" element={<Landingpage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
+          
 
 
           <Route
@@ -138,35 +137,35 @@ const App = () => {
 
           <Route
             path="/hyderabad"
-            element={userRole === "user" ? <Hyderabad /> : <Navigate to="/" />}
+            element={ <Hyderabad />}
           />
 
           <Route
             path="/bengaluru"
-            element={userRole === "user" ? <Bengaluru /> : <Navigate to="/" />}
+            element={<Bengaluru />}
           />
           <Route
             path="/vizag"
-            element={userRole === "user" ? <Vizag /> : <Navigate to="/" />}
+            element={<Vizag/>}
           />
 
           <Route
             path="/chennai"
-            element={userRole === "user" ? <Chennai /> : <Navigate to="/" />}
+            element={<Chennai />}
           />
 
           <Route
             path="/delhi"
-            element={userRole === "user" ? <Delhi /> : <Navigate to="/" />}
+            element={<Delhi/>}
           />
 
           <Route
             path="/mumbai"
-            element={userRole === "user" ? <Mumbai /> : <Navigate to="/" />}
+            element={<Mumbai /> }
           />
           <Route
             path="/kolkata"
-            element={userRole === "user" ? <Kolkata /> : <Navigate to="/" />}
+            element={<Kolkata />}
           />
 
           <Route

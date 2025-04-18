@@ -16,8 +16,7 @@ const Hyderabad = () => {
             scale: 1,
             y: 0,
             transition: {
-                duration: 0.6,
-                delay: i * 0.05,
+                duration: 0.3,
                 ease: "easeOut",
             },
         }),
@@ -56,7 +55,7 @@ const Hyderabad = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8,
+                duration: 0.5,
                 ease: "easeOut",
                 when: "beforeChildren",
                 staggerChildren: 0.15,
@@ -66,7 +65,7 @@ const Hyderabad = () => {
 
     const listItemVariants = {
         hidden: { opacity: 0, x: -20 },
-        visible: { opacity: 1, x: 0, transition: { duration: 0.4 } }
+        visible: { opacity: 1, x: 0, transition: { duration: 0.3 } }
     }
 
     return (
@@ -77,7 +76,7 @@ const Hyderabad = () => {
                 <motion.p
                     initial={{ opacity: 0, y: 70 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1.2, ease: "easeOut" }}
+                    transition={{ duration: 1, ease: "easeOut" }}
                     viewport={{ once: true }}
                     className="absolute bottom-4 left-4 text-white text-lg font-semibold"
                 >

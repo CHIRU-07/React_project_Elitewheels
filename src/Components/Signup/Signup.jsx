@@ -55,28 +55,25 @@ const successAlert = () => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <div style={{backgroundColor:"#f8f9fa",paddingTop:"30px", width:"98.4vw%"}}>
+      <Container maxWidth="xs">
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 8,
-          p: 5,
-          mb:8,
-          boxShadow: 8,
-          borderRadius: 2,
-          backgroundColor: "white",
+          p: 4,
+          backgroundColor: "#f8f9fa",
           width: "90%",
-        }}
+           }}
       >
         <LockIcon
           sx={{
             fontSize: 35,
-            color: "#f4c430",
+            color: " #415ff2",
             mb: 1,
             transition: "color 0.3s",
-            "&:hover": { color: "#e6c72f" },
+            "&:hover": { color: "black " },
           }}
         />
         <Typography variant="h5" gutterBottom>
@@ -165,10 +162,10 @@ const successAlert = () => {
               sx={{
                 mt: 2,
                 width: "60%",
-                backgroundColor: "#f4c430",
-                color: "#000",
+                backgroundColor: " #415ff2",
+                color: "white",
                 transition: "background-color 0.3s",
-                "&:hover": { backgroundColor: "#e6c72f" },
+                "&:hover": { backgroundColor: "black " ,color:"white"},
               }}
             >
               Signup
@@ -181,14 +178,14 @@ const successAlert = () => {
           <Link
             to="/login"
             style={{
-              color: "#f4c430",
+              color: "black",
               fontWeight: "bold",
-              textDecoration: "none",
+              textDecoration: "underline",
               fontSize: "1.1rem"
              
             }}
-            onMouseOver={(e) => (e.target.style.color = "#e6c72f")}
-            onMouseOut={(e) => (e.target.style.color = "#f4c430")}
+            onMouseOver={(e) => (e.target.style.color =" #415ff2")}
+            onMouseOut={(e) => (e.target.style.color = "black")}
           >
             Login
           </Link>
@@ -196,6 +193,7 @@ const successAlert = () => {
         
       </Box>
     </Container>
+    </div>
   );
 };
 

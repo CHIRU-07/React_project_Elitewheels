@@ -15,7 +15,7 @@ const Bengaluru = () => {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8,
+                duration: 0.3,
                 ease: "easeOut",
                 when: "beforeChildren",
                 staggerChildren: 0.15,
@@ -61,7 +61,7 @@ const Bengaluru = () => {
                     className="rental-process-subtext"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.2 }}
+                    transition={{ duration: 1}}
                     viewport={{ once: true }}
                 >
                     EliteWheels makes hitting the road effortless—simply choose your car, reserve it, and drive whenever and wherever you need!
@@ -105,7 +105,7 @@ const Bengaluru = () => {
                                     className="rental-dotted-connector"
                                     initial={{ scaleX: 0 }}
                                     whileInView={{ scaleX: 1 }}
-                                    transition={{ duration: 0.4, delay: 0.4 + index * 0.2 }}
+                                    transition={{ duration: 0.4, delay: 0.2 + index * 0.2 }}
                                     viewport={{ once: true }}
                                     style={{ transformOrigin: "left" }}
                                 />

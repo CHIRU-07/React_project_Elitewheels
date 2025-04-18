@@ -19,14 +19,14 @@ export default function Landingnavbar() {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto" id="navlinkcontainer">
             <NavDropdown title="Location" id="basic-nav-dropdown" className="nav-dropdown">
-            <NavDropdown.Item href="#action/3.1"> Hyderabad</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2"> Vizag</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Bengaluru </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.4"> Chennai</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7"> Mumbai </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.7"> Kolkata</NavDropdown.Item>
+            <NavDropdown.Item href="/hyderabad"> Hyderabad</NavDropdown.Item>
+              <NavDropdown.Item href="/vizag"> Vizag</NavDropdown.Item>
+              <NavDropdown.Item href="/bengaluru">Bengaluru </NavDropdown.Item>
+              <NavDropdown.Item href="/chennai"> Chennai</NavDropdown.Item>
+              <NavDropdown.Item href="/mumbai"> Mumbai </NavDropdown.Item>
+              <NavDropdown.Item href="/kolkata"> Kolkata</NavDropdown.Item>
 
-              <NavDropdown.Item href="#action/3.8">Delhi</NavDropdown.Item>
+              <NavDropdown.Item href="/delhi">Delhi</NavDropdown.Item>
         
               </NavDropdown>
             <Nav.Link href="/Signup" className="nav-link">Sign Up</Nav.Link>

@@ -5,9 +5,8 @@
   }
   
   :root {
-    --themecolororange: #fdde35;
     --fontstyle: "Instrument Sans", sans-serif;
-    --highlightcolor: rgb(178, 178, 99);
+    --highlightcolor: #415ff2;
     --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     --card-hover-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
     --text-color: #555;
@@ -22,6 +21,7 @@
     align-items: center;
     gap: 70px;
     font-family: var(--fontstyle);
+    background-color: #f8f9fa;
   }
   
 

@@ -54,22 +54,19 @@ const Login = () => {
   };
 
   return (
-    <Container maxWidth="xs">
+    <div style={{backgroundColor:"#f8f9fa",paddingTop:"30px", width:"98.4vw%",height:"88vh"}}>
+      <Container maxWidth="xs">
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          mt: 8,
-          p: 5,
-          mb: 8,
-          boxShadow: 8,
-          borderRadius: 2,
-          backgroundColor: "white",
+          p: 6,
+          backgroundColor: "#f8f9fa",
           width: "90%",
         }}
       >
-        <LockIcon sx={{ fontSize: 35, color: "#f4c430", mb: 1 }} />
+        <LockIcon sx={{ fontSize: 35, color: "#415ff2", mb: 1 }} />
         <Typography variant="h5" gutterBottom>
           Login
         </Typography>
@@ -120,11 +117,11 @@ const Login = () => {
               type="submit"
               variant="contained"
               sx={{
-                mt: 2,
+                mt: 3,
                 width: "60%",
-                backgroundColor: "#f4c430",
-                color: "#000",
-                "&:hover": { backgroundColor: "#e6c72f" },
+                backgroundColor: "#415ff2",
+                color: "white",
+                "&:hover": { backgroundColor: "black" },
               }}
             >
               Login
@@ -137,19 +134,20 @@ const Login = () => {
           <Link
             to="/signup"
             style={{
-              color: "#f4c430",
+              color: "black",
               fontWeight: "bold",
-              textDecoration: "none",
+              textDecoration: "underline",
               fontSize: "1.1rem",
             }}
-            onMouseOver={(e) => (e.target.style.color = "#e6c72f")}
-            onMouseOut={(e) => (e.target.style.color = "#f4c430")}
+            onMouseOver={(e) => (e.target.style.color = "#415ff2")}
+            onMouseOut={(e) => (e.target.style.color = "black")}
           >
             Signup
           </Link>
         </Typography>
       </Box>
     </Container>
+    </div>
   );
 };
 
