@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import "./landingnavbar.css";
+import "./Landingnavbar.css";
 import { FaBars } from "react-icons/fa"; 
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
