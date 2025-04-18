@@ -1,0 +1,73 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+}
+:root{
+    --themecolororange:#fdde35;
+    --fontstyle:"Instrument Sans", sans-serif
+
+}
+.navbar{
+    /* background-color: #800020; */
+    /* background-color: transparent; */
+    /* border:2px red solid; */
+}
+
+.container{
+    /* border:2px red solid; */
+    padding:5px !important;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: transparent;
+}
+
+.navbar-brand{
+    font-size: 2.15rem !important;
+    font-family: var(--fontstyle);
+    text-transform: uppercase;
+    color: black !important;
+    font-weight: 700;
+    
+}
+#navlinkcontainer{
+    /* border:2px blue solid; */
+    background-color: black;
+    padding:15px;
+    display: flex;
+    gap:15px;
+    border-radius: 10px;
+}
+
+#navlinkcontainer > .nav-link,.nav-dropdown .nav-link{
+    color:white !important;
+    font-size: 1.1rem;
+}
+
+#navlinkcontainer > .nav-link:hover,.nav-dropdown .nav-link:hover{
+    color:var(--themecolororange) !important;
+}
+
+
+.nav-dropdown .dropdown-menu {
+    background-color: black; 
+  }
+
+.nav-dropdown .dropdown-item {
+    color: white !important;
+    padding: 10px 15px; 
+    width: 100%; 
+  }
+
+  .nav-dropdown .dropdown-item:hover {
+    color: var(--themecolororange) !important;
+    background-color: black !important;
+    width: 100%;
+    display: block; 
+  }
+
+
+
+
+

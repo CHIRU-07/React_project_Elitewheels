@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --themecolororange: #fdde35;
+    --fontstyle: "Instrument Sans", sans-serif;
+    --highlightcolor: rgb(178, 178, 99);
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --card-hover-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+    --text-color: #555;
+    --heading-color: #2d2d2d;
+  }
+  
+
+  .homecontainer {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    font-family: var(--fontstyle);
+  }
+  
+
+  .carimg {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+  }
+  
+  .carimg p {
+    font-size: 2.5rem;
+    color: white !important;
+    width: 60%;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    transform: translateY(-50%);
+    line-height: 1.2;
+    font-weight: bold;
+    z-index: 2;
+  }
+  
+
+
+  
+  
+  
+  /* Car Rental Info Section */
+  .car-rental-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1300px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .info-block {
+    background: #f9f9f9;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+  
+  .info-block:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .info-block h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .info-block p,
+  .info-block li {
+    color: var(--text-color);
+    font-size: 15px;
+  }
+  
+  .info-block ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .info-block li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Tourist Places Section */
+  .tourist-section {
+    max-width: 1600px;
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .tourist-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .attraction-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .attraction-card {
+    background-color: #fdfdfd;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 5px solid #7a9e7e;
+  }
+  
+  .attraction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.1);
+    background-color: #f7fdf9;
+  }
+  
+  .attraction-card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--heading-color);
+  }
+  
+  .attraction-card p {
+    font-size: 14px;
+    color: var(--text-color);
+  }
+  
+  /* Why IndusGo Section */
+  .why-choose-indusgo {
+    width: 100%;
+    background-color: #fdfdfd;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .why-card {
+    width: 100%;
+    max-width: 1600px;
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-hover-shadow);
+  }
+  
+  .why-card h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .why-card p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .why-card ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  
+  .why-card li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .why-card li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #7a9e7e;
+    font-size: 1rem;
+  }
+  
+  .highlight {
+    color: var(--highlightcolor);
+    font-weight: bold;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 992px) {
+    .car-rental-info {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .steps-container {
+      flex-direction: column;
+    }
+  
+    .dotted-line {
+      display: none;
+    }
+  
+    .why-card {
+      padding: 30px 20px;
+    }
+  
+    .carimg p {
+      font-size: 2rem;
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .attraction-card h4 {
+      font-size: 1rem;
+    }
+  }
+  
+  .attraction-card {
+    transition: transform 0.3s ease;
+  }
+  .attraction-card:hover {
+    transform: translateY(-5px) scale(1.03);
+  }
+
+
+  .why-card li {
+    position: relative;
+    padding-left: 2rem; /* More space for the tick */
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+  
+  .why-card li::before {
+    content: "✔️";
+    position: absolute;
+    left: 0;
+    top: 0.1rem; /* vertically aligns the icon nicely */
+    font-size: 1rem;
+  }
+
+  .rental-process-section {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .rental-process-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .rental-process-subtext {
+    color: #6e7284;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1rem;
+  }
+  
+  .rental-steps-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .rental-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .rental-icon-container {
+    background-color: #e5e7c3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+  }
+  
+  .rental-icon-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .rental-step-text {
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 150px;
+  }
+  
+  .rental-dotted-connector {
+    width: 40px;
+    height: 2px;
+    border-bottom: 2px dotted #bdc400;
+  }
+  
+  /* Responsive for steps */
+  @media (max-width: 768px) {
+    .rental-steps-wrapper {
+      flex-direction: column;
+    }
+  
+    .rental-dotted-connector {
+      display: none;
+    }
+  }

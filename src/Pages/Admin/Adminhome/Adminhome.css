@@ -1,0 +1,131 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --themecolororange: #fdde35;
+  --fontstyle: "Instrument Sans", sans-serif;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Balanced size */
+  justify-content: center;
+  gap: 80px;
+  padding: 20px;
+}
+
+/* Car card */
+.car-card {
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.15);
+  font-family: var(--fontstyle);
+  transition: transform 0.3s ease-in-out;
+  width: 350px; /* Optimized width */
+  margin: auto;
+}
+
+.car-card:hover {
+  transform: scale(1.03);
+}
+
+/* Car image */
+.car-image {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Title */
+.car-title {
+  font-size: 1.3rem;
+  margin: 12px 0;
+  font-weight: bold;
+}
+
+/* Price */
+.car-price {
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Details */
+.car-details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  align-items: center;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+
+}
+.detail  > span{
+  margin-top: 3px;
+  font-size: 1.1rem;
+
+}
+
+
+.detail img {
+  width: 28px;
+  height: 28px;
+}
+
+.car-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Added spacing between buttons */
+  margin-top: 15px;
+}
+
+.car-actions button {
+  flex: 1; 
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: var(--fontstyle);
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+
+.edit-btn {
+  background: #4caf50;
+  color: white;
+  margin-right: 10px;
+}
+
+.edit-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+
+.delete-btn {
+  background: #e74c3c;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #c0392b;
+  transform: scale(1.05);
+}
+
+
+#carseatssvg{
+  width: 22px;
+  height:22px;
+  margin-right: 3px;
+}

@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --themecolororange:#fdde35;
+    --fontstyle:"Instrument Sans", sans-serif
+
+
+}
+
+.Footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    color: white;
+    gap:30px;
+    /* border-radius:20px; */
+    /* margin-bottom: 30px; */
+  }
+  
+  #Ft {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  #brand {
+    width: 45%;
+    font-family: var(--fontstyle);
+    font-size: 1.25rem;
+    
+  }
+  
+  #branches, #contactandaddress, #links {
+    width: 23%;
+    text-align: center;
+  }
+  #contactandaddress{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  #branches > h3,
+  #contact > h3,#address > h3,#links > h3 {
+    font-size: 1.7rem;
+    font-family: var(--fontfam);
+    color: var(--primary-color);
+  }
+  
+  #branches > p,
+  #number p,
+  #number h3,
+  #adress h3,
+  #address p {
+    font-size: 1.05rem;
+    margin: 0;
+    color:grey;
+  }
+  #branches > p:hover,
+  #number p:hover,
+  #number h3:hover,
+  #adress h3:hover,
+  #address p:hover {
+   color:white;
+   cursor:pointer
+  }
+  
+  #links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  
+  #links > #fb:hover,
+  #links > #insta:hover,
+  #links > #lin:hover,
+  #links > #wa:hover {
+    transition: color 0.3s ease, transform 0.3s ease;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  #Fbottom {
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1rem;
+    color: var(--text-color);
+    border-radius: 15px;
+  }
+  
+ @media screen and (max-width: 450px) {
+    #Ft {
+      width: 100%;
+      flex-direction: column;
+      gap: 25px;
+      padding: 10px;
+      align-items: center;
+    }
+    #brand {
+      width: 100%;
+    }
+    
+    #branches, #contactandaddress, #links {
+      width: 100%;
+      text-align: center;
+    }
+    #contactandaddress{
+      display: flex;
+      flex-direction: column;
+      gap:20px;
+    }
+    #branches > h3,
+    #contact > h3,#address > h3,#links > h3 {
+      font-size: 1.6rem;
+      font-family: var(--fontfam);
+      color: var(--primary-color);
+    }
+    
+    #branches > p,
+    #number p,
+    #number h3,
+    #adress h3,
+    #address p {
+      font-size: 1.15rem;
+      font-family: var(--fontfam);
+      color: var(--text-color);
+      margin: 0;
+    }
+    
+    #links {
+      flex-direction: column;
+      gap: 15px;
+    }
+   
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
